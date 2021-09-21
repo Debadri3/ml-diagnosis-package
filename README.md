@@ -26,8 +26,11 @@ Next if you want publish the package, do so in PyPI or Gemfury etc.
 Inside the parent package directory regression_model:
 
 whl file is a type of built distribution that tells installers what Python versions and platforms the wheel will support. 
+
 MANIFEST.IN specifies which files to be included while building our package
+
 setup.py is the file which Python uses for configuration before publishing the package to PYPI.
+
 VERSION is the version number for the package release
 
 1. config-
@@ -38,9 +41,13 @@ config.py -> contains variable names of saved models' destination path, names of
 3. processing-
 
 data_management.py -> contains function definitions to load and save the model pipelines and vectorizers. Note that whenever a new pipeline is saved, the old pipeline is deleted (excepting some files).
+
 errors.py -> contains input error definitions etc.
+
 vect_preprocessor -> sklearn like class definitions of data preprocessors and encoders used while training the one-hot-models and standard scalers.
+
 preprocessors.py -> sklearn like class definitions of data preprocessors and encoders used while training the Logistic Regression model and while making predictions.
+
 validation.py -> validates input type to the model
 
 4. pipeline.py -> defines the scikit-learn pipeline used while training the one-hot-models and standard scalers.
