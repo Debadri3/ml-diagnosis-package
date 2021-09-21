@@ -25,7 +25,7 @@ Next if you want publish the package, do so in PyPI or Gemfury etc.
 
 Inside the parent package directory regression_model:
 
-whl file is a type of built distribution that tells installers what Python versions and platforms the wheel will support. ...
+whl file is a type of built distribution that tells installers what Python versions and platforms the wheel will support. 
 MANIFEST.IN specifies which files to be included while building our package
 setup.py is the file which Python uses for configuration before publishing the package to PYPI.
 VERSION is the version number for the package release
@@ -53,7 +53,7 @@ validation.py -> validates input type to the model
 
 8. predict.py -> used for single input predictions. Also logs input variables, outputs and model version with the result.
 
-##Further challenges-
+## Further challenges-
 1. The uploaded train.csv is only a subset of the original train file on Kaggle [https://www.kaggle.com/c/msk-redefining-cancer-treatment]. This is due to GitHub limitations on maximum file size per commit. This will be solved using GitHub LFS. Meanwhile feel free to download the dataset from Kaggle and use that instead.
 2. Set up a CI/CD pipeline (preferably using CircleCI)
 3. Docker + Heroku
